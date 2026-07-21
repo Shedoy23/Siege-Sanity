@@ -1,15 +1,15 @@
 # Siege Sanity
 
-Fixes for two vanilla Bannerlord siege bugs, plus one optional behaviour tweak.
+Sieges that actually finish — plus fixes for two vanilla siege bugs.
 Every patch can be toggled in MCM, so the mod can sit alongside other siege mods.
 
 ## What it does
 
 | | |
 |---|---|
+| **Stubborn assault** (behaviour, **on** by default — the point of the mod) | Vanilla scales the retreat threshold by assault progress, so attackers who cannot get up the walls pull back at ~40% losses, regroup, and repeat for in-game weeks. Here the threshold is a flat low value: the assault runs to a conclusion. Attackers still break off when genuinely destroyed (default 0.25 = after losing ~75%); configurable. **This changes AI behaviour rather than fixing a bug** — it is stated first in the Workshop description and can be switched off. |
 | **Army wipe on siege retreat** (fix, on by default) | Vanilla treats a failed assault as a total capture: the whole besieging army is taken prisoner or killed and its lords respawn with a single troop. With the fix, survivors retreat instead. A genuine wipe — no healthy survivors — is still a wipe. |
 | **Siege-start crash** (guard, on by default) | A vanilla `NullReferenceException` in `MobileParty.OnPartyJoinedSiegeInternal` during the campaign tick hard-crashes the game. Caught so the game keeps running. **Trade-off:** that party does not join that siege. This hides the symptom rather than curing the cause — see the source comment. |
-| **Stubborn assault** (behaviour, **off** by default) | Vanilla scales the retreat threshold by assault progress, so attackers who cannot get up the walls pull back at ~40% losses, regroup, and repeat forever. With this on, the threshold is a flat low value: the assault runs to a conclusion. Threshold configurable (default 0.25 = they break off after losing ~75%). |
 
 ## Compatibility
 

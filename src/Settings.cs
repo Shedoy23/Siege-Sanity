@@ -10,6 +10,10 @@ namespace SiegeSanity
     /// много, и если наш патч с чем-то не поладит у конкретного игрока, он должен
     /// иметь возможность выключить ОДИН патч, а не сносить мод целиком.
     ///
+    /// Упрямый штурм ВКЛЮЧЁН по умолчанию — это главная фича мода, и она заявлена
+    /// первой строкой описания в Workshop. Изменение поведения ИИ, включённое по
+    /// умолчанию и не объявленное, — это то, за что моды справедливо ругают.
+    ///
     /// Патчи применяются всегда, а вот их тело спрашивает настройку в рантайме —
     /// поэтому переключение работает без перезапуска игры.
     /// </summary>
@@ -43,8 +47,8 @@ namespace SiegeSanity
 
         [SettingPropertyGroup("{=SiegeSanity_GroupBehaviour}Assault behaviour", GroupOrder = 1)]
         [SettingPropertyBool("{=SiegeSanity_Stubborn}Stubborn assault", RequireRestart = false,
-            HintText = "{=SiegeSanity_StubbornHint}Attackers keep pushing instead of pulling back the moment they cannot get up the walls. This changes AI behaviour rather than fixing a bug, so it is off by default.")]
-        public bool StubbornAssault { get; set; } = false;
+            HintText = "{=SiegeSanity_StubbornHint}Attackers keep pushing instead of pulling back the moment they cannot get up the walls. This is the main feature of the mod and is ON by default. It changes AI behaviour rather than fixing a bug — turn it off here for vanilla assault behaviour.")]
+        public bool StubbornAssault { get; set; } = true;
 
         [SettingPropertyGroup("{=SiegeSanity_GroupBehaviour}Assault behaviour", GroupOrder = 1)]
         [SettingPropertyFloatingInteger("{=SiegeSanity_StubbornRatio}Retreat threshold", 0.05f, 0.6f, "0.00", RequireRestart = false,
