@@ -1,0 +1,13 @@
+<Tasks>
+  <CreateItem />
+  <UpdateItem>
+    <ModuleFolder Value="X:\SteamLibrary\steamapps\common\Mount &amp; Blade II Bannerlord\Modules\Shedoy23.SiegeSanity" />
+    <ItemDescription Value="Fixes for two vanilla siege bugs, plus one optional behaviour tweak. Everything is toggleable in MCM, so it can coexist with other siege mods.&#10;&#10;FIXED: army wiped out on siege retreat. Vanilla treats a failed assault as a total capture — the whole besieging army is taken prisoner or killed, and its lords respawn with a single troop. Now survivors retreat instead. A genuine wipe is still a wipe.&#10;&#10;FIXED: crash when a party joins a siege. A vanilla NullReferenceException during the campaign tick hard-crashes the game (seen most often with many AI sieges running). The exception is caught so the game keeps running; that party simply does not join that siege.&#10;&#10;OPTIONAL: stubborn assault. Vanilla scales the retreat threshold by assault progress, so attackers who cannot get up the walls pull back almost immediately, regroup and repeat. With this on, attackers push until they are genuinely broken. This changes AI behaviour rather than fixing a bug, so it is OFF by default and the threshold is configurable.&#10;&#10;Does not touch save data. No overlay. Patches only three engine methods; no overlap with SiegeFix.&#10;&#10;Requirements: Bannerlord v1.3.15, Harmony, ButterLib, MCM (MBOptionScreen).&#10;&#10;Source code: MIT — see LICENSE.txt." />
+    <Tags>
+      <Tag Value="Mod" />
+      <Tag Value="BugFix" />
+    </Tags>
+    <ChangeNotes Value="Initial release. v1.0.0" />
+    <Visibility Value="Private" />
+  </UpdateItem>
+</Tasks>
