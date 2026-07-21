@@ -1,0 +1,9 @@
+<Tasks>
+  <GetItem>
+    <ItemId Value="3769206755" />
+  </GetItem>
+  <UpdateItem>
+    <ModuleFolder Value="X:\SteamLibrary\steamapps\common\Mount &amp; Blade II Bannerlord\Modules\Shedoy23.SiegeSanity" />
+    <ChangeNotes Value="Minor changes." />
+  </UpdateItem>
+</Tasks>

@@ -60,8 +60,16 @@ TaleWorlds.MountAndBlade.SteamWorkshop.exe "X:\SteamLibrary\steamapps\common\Mou
 Success prints `Item created. Item ID is …` and `Uploading done!`. Silence
 between `Starting...` and `Finished...` means nothing was uploaded.
 
-Then: put the printed ID into `workshop_update.xml`, add a preview image on the
-Workshop page, and flip visibility to Public when you are happy with it.
+Published item ID: **3769206755**, already filled into `workshop_update.xml`.
+
+Updates after that (edit `ChangeNotes` first):
+
+```
+cd /d "X:\SteamLibrary\steamapps\common\Mount & Blade II Bannerlordin\Win64_Shipping_Client"
+TaleWorlds.MountAndBlade.SteamWorkshop.exe "X:\SteamLibrary\steamapps\common\Mount & Blade II Bannerlord\Modules\Shedoy23.SiegeSanity\workshop_update.xml"
+```
+
+The preview image must stay **under 1 MB** — Steam rejects anything larger.
 
 **Always verify on the Workshop page** that the update date changed. The tool
 reports success far too easily.
