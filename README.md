@@ -50,10 +50,15 @@ do not "tidy them up":
 2. **`ModuleFolder` must be an absolute path** — internally it calls
    `ModuleInfo.LoadWithFullPath`.
 
-First publish (creates the item, **Private** so you can review it first):
+Run from the game's binary folder:
 
 ```
 cd /d "X:\SteamLibrary\steamapps\common\Mount & Blade II Bannerlord\bin\Win64_Shipping_Client"
+```
+
+First publish — creates the item, **Private** so it can be reviewed first:
+
+```
 TaleWorlds.MountAndBlade.SteamWorkshop.exe "X:\SteamLibrary\steamapps\common\Mount & Blade II Bannerlord\Modules\Shedoy23.SiegeSanity\workshop_publish.xml"
 ```
 
@@ -62,10 +67,9 @@ between `Starting...` and `Finished...` means nothing was uploaded.
 
 Published item ID: **3769206755**, already filled into `workshop_update.xml`.
 
-Updates after that (edit `ChangeNotes` first):
+Later updates — edit `ChangeNotes` in that file first, then:
 
 ```
-cd /d "X:\SteamLibrary\steamapps\common\Mount & Blade II Bannerlordin\Win64_Shipping_Client"
 TaleWorlds.MountAndBlade.SteamWorkshop.exe "X:\SteamLibrary\steamapps\common\Mount & Blade II Bannerlord\Modules\Shedoy23.SiegeSanity\workshop_update.xml"
 ```
 
